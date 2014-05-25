@@ -1,7 +1,7 @@
 from distutils.core import setup	
 
 setup(
-	name='truncate',
+	name='trunkate',
 	version='0.0.1',
 	description='truncate string',
 	author='yangchen',
