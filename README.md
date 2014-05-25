@@ -16,3 +16,14 @@ sys.modules[__name__] = truncate
 ```Bash
 $ pip install trunkate
 ```
+
+##Usage
+```Bash
+import truncate
+
+truncate('Hello world!', 4)
+# Hell...
+
+truncate('Hello world!', 100)
+# Hello world!
+```
