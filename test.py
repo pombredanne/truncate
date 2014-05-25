@@ -1,10 +1,16 @@
 import unittest
-from truncate import truncate
+import truncate
 
-class Teststringcode(unittest.TestCase): 
-    def test_ok(self):
-        self.assertEqual(truncate('heqingyang',5) , 'heqin...' )
-        self.assertEqual(truncate('heqingyang',20) , 'heqingyang' )
+class TestTruncate(unittest.TestCase): 
+
+	def testLimit(self):
+		self.assertEqual(truncate('heqingyang', 5) , 'heqin...')
+		self.assertEqual(truncate('heqingyang', 20) , 'heqingyang')
+
+	def testEllipsis(self):
+		self.assertEqual(truncate('heqingyang', 5) , 'heqin...')
+		self.assertEqual(truncate('heqingyang', 5, ellipsis=' more') , 'heqin more')
+
 
 if __name__ == '__main__':
     unittest.main()
