@@ -6,7 +6,7 @@ setup(
 	description='truncate string',
 	author='yangchen',
 	author_email='yuhan534@126.com',
-	url='https://github.com/jarvys/truncate',
+	url='https://github.com/limijiaoyin/truncate',
 	install_requires=[],
 	py_modules=['truncate'],
 	packages=[],
